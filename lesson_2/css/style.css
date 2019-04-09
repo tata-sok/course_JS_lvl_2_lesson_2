@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	max-width: 1920px;
+	margin: 0 auto; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+	max-width: 100%;
+	background: linear-gradient(to right, #F6EFD2, #CEAD78);
+	position: relative;
+}
+
+.main-header h1 {
+	color: rgb(89, 42, 25);
+	padding: 10px 0 0px 40px;
+}
+
+.main-header h3 {
+	color: rgb(166, 121, 81);
+	padding: 10px 0 20px 40px;
+}
+
+.cart-button {
+	background-image: url(../img/basket.svg);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	background-position: center center;
+	width: 25px;
+	height: 25px;
+	margin: 3px;
+	position: absolute;
+	top: 30px;
+	right: 40px;
+}
+
+.cart-button:hover {
+	background-image: url(../img/basket_hover.svg);
+	cursor: pointer;
+}
+
+.main {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.goods-item {
+	display: inline-block;
+	width: 200px;
+	height: 300px;
+	border: 1px solid #d0a76f;
+	text-align: center;
+	margin: 10px;
+	
+}
+
+.goods-item:hover {
+	border: 1px solid #ff7725;
+}
+
+.goods-item h3 {
+	color: rgb(89, 42, 25);
+	padding: 200px 0 0 0;
+}
+
+.goods-item:first-child {
+	background-image: url(../img/harrar.png);
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}
+
+.goods-item:nth-child(2) {
+	background-image: url(../img/sidamo.png);
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}
+
+.goods-item:nth-child(3) {
+	background-image: url(../img/yirgacheffe.png);
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}
+
+.goods-item:nth-child(4) {
+	background-image: url(../img/kochere.png);
+	background-size: 200px 200px;
+	background-repeat: no-repeat;
+}
+
+.button-buy {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	background-color: #CEAD78;
+	color: rgb(89, 42, 25);
+	box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	width: 95px;
+	height: 30px;
+	margin: 10px;
+}
+
+.button-buy:hover {
+	background-color: rgb(217, 171, 115);
+	cursor: pointer;
+}
+
+.button-buy:active {
+	background-color: #F6EFD2;
+	cursor: pointer;
+}
